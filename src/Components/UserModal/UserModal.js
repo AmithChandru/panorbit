@@ -32,6 +32,9 @@ const UserModal = (props) => {
             )
           })
         }
+        <div className='SignoutButton'>
+          Sign out
+        </div>
       </div>
     </div>
   )

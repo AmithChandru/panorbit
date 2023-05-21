@@ -1,4 +1,5 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
+import chatsSlice from "./ChatsReducer";
 
 const userSlice = createSlice({
   name: 'users',
@@ -17,7 +18,7 @@ const userSlice = createSlice({
 })
 
 const store = configureStore({
-  reducer: { users: userSlice.reducer }
+  reducer: { users: userSlice.reducer, chats: chatsSlice.reducer }
 })
 
 export const userActions = userSlice.actions;

@@ -44,6 +44,12 @@
   margin-top: 20px;
 }
 
+.ProfileHeader {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .Details {
   display: flex;
   flex-direction: row;

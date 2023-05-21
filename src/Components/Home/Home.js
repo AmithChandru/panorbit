@@ -5,6 +5,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { BounceLoader } from 'react-spinners';
 import { useNavigate } from 'react-router-dom';
 import UserModal from '../UserModal/UserModal';
+import InboxModal from '../InboxModal/InboxModal';
+import ChatModal from '../ChatModal/ChatModal';
 
 const Home = () => {
 
@@ -12,6 +14,7 @@ const Home = () => {
   const [selected, setSelected] = useState(1);
   const [loading, setLoading] = useState(true);
   const [userModal, setUserModal] = useState(false);
+  const [chatModal, setChatModal] = useState(false);
   const navigate = useNavigate();
   /* const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.AIzaSyBl8xbmveoDy7pVm26M7MVS4N4Kb7V_wZ0,
@@ -32,10 +35,16 @@ const Home = () => {
   const toggleUserModal = () => {
     setUserModal(!userModal);
   }
+
+  const toggleChatModal = () => {
+    setChatModal(!chatModal);
+  }
   
   return (
     <div className='HomePage'>
       {userModal && <UserModal toggleUserModal={toggleUserModal} />}
+      <InboxModal toggleChatModal={toggleChatModal}/>
+      {chatModal && <ChatModal toggleChatModal={toggleChatModal}/>}
       <div className='NavBar'>
         <span
           className='NavItem'
@@ -68,7 +77,7 @@ const Home = () => {
         <div className='DetailsSection'>
           <section className='Header'>
             <span>Profile</span>
-            <section style={{cursor: 'pointer'}} onClick={toggleUserModal}>
+            <section className='ProfileHeader' onClick={toggleUserModal}>
               <img className='ProfilePic' src={`${activeUser.profilepicture}`}/>
               <span>{activeUser.name}</span>
             </section>
@@ -142,7 +151,7 @@ const Home = () => {
                     <span>{activeUser.address.geo.lat}</span>
                   </section>
                   <section>
-                    <span className='SubText'>Lng : </span>
+                    <span className='SubText'>Long : </span>
                     <span>{activeUser.address.geo.lng}</span>
                   </section>
                 </div>
