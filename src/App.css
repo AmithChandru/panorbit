@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .App-logo {
@@ -35,4 +37,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../public/Poppins-Regular.ttf);
+}
+
+.poppins {
+  font-family: poppins;
 }

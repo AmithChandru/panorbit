@@ -1,0 +1,119 @@
+.HomePage {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+
+.NavBar {
+  width: 20vw;
+  height: 100vh;
+  background-color: #1560bd;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+.NavItem {
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  width: 80%;
+  padding: 10px;
+  border-color: #d6cfc7;
+  cursor: pointer;
+}
+
+.DetailsSection {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #d6cfc7;
+  padding-bottom: 20px;
+  align-items: center;
+  width: 95%;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.Details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 80%;
+}
+
+.Personal {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 2px solid #d6cfc7;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.Address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 20px;
+}
+
+.AddressDetails {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: start;
+  height: 90%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.DisplayPic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.SubText {
+  color: #d6cfc7;
+}
+
+.NameText {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.MapPic {
+  height: 300px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.Co-ordinates {
+  display: flex;
+  flex-direction: row;
+  align-self: end;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.Map-Container {
+  height: 300px;
+  width: 500px;
+}
+
+.Loaderr {
+  margin-top: 40vh;
+  margin-left: 25vw;
+}
