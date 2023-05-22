@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/panorbit/static/css/main.5010e287.css",
+    "main.css": "/panorbit/static/css/main.bf0dc83c.css",
     "main.js": "/panorbit/static/js/main.1110de62.js",
     "static/js/787.cd498418.chunk.js": "/panorbit/static/js/787.cd498418.chunk.js",
     "static/media/Poppins-Regular.ttf": "/panorbit/static/media/Poppins-Regular.4211496d0e075ffe7c2f.ttf",
     "index.html": "/panorbit/index.html",
-    "main.5010e287.css.map": "/panorbit/static/css/main.5010e287.css.map",
+    "main.bf0dc83c.css.map": "/panorbit/static/css/main.bf0dc83c.css.map",
     "main.1110de62.js.map": "/panorbit/static/js/main.1110de62.js.map",
     "787.cd498418.chunk.js.map": "/panorbit/static/js/787.cd498418.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5010e287.css",
+    "static/css/main.bf0dc83c.css",
     "static/js/main.1110de62.js"
   ]
 }
