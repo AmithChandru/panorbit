@@ -1,17 +1,18 @@
 import { useSelector } from 'react-redux';
 import './Home.css';
 import { GoogleMap, useLoadScript } from '@react-google-maps/api';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { BounceLoader } from 'react-spinners';
 import { useNavigate } from 'react-router-dom';
 import UserModal from '../UserModal/UserModal';
 import InboxModal from '../InboxModal/InboxModal';
 import ChatModal from '../ChatModal/ChatModal';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import image from '../Images/map.jpg';
 
 const Home = () => {
 
-  const activeUser = useSelector(state => state.users.activeUser);
+  const activeUser = JSON.parse(localStorage.getItem('activeUser'));
   const [selected, setSelected] = useState(1);
   const [loading, setLoading] = useState(true);
   const [userModal, setUserModal] = useState(false);
@@ -23,10 +24,15 @@ const Home = () => {
   });
   const center = useMemo(() => ({ lat: activeUser.address.geo.lat, lng: activeUser.address.geo.lng }), []); */
 
-  useEffect(() => {
-    if (!activeUser) {
+  /* useLayoutEffect(() => {
+    window.onbeforeunload = function() {
       navigate('/');
+      return;
     }
+  }) */
+
+  useEffect(() => {
+    if (!activeUser) navigate('/')
   }, [])
 
   useEffect(() => {
@@ -177,7 +183,7 @@ const Home = () => {
                   /> */}
                   <img
                     className='MapPic'
-                    src='https://drive.google.com/file/d/1D5-Rr245pLV1RvS0eBBfwzteNLOQV01z/view'
+                    src={image}
                     alt='image'
                   />
                   <div className='Co-ordinates'>

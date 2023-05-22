@@ -9,9 +9,9 @@ import { chatActions } from '../../Store/ChatsReducer';
 const InboxModal = (props) => {
 
   const [extended, setExtended] = useState(false);
-  const users = useSelector(state => state.users.users);
-  const activeUser = useSelector(state => state.users.activeUser);
-  const chatUsers = users.filter((item) => item !== activeUser);
+  const activeUser = JSON.parse(localStorage.getItem('activeUser'));
+  const chatUsers = JSON.parse(localStorage.getItem('users')).filter((item) => item.id != activeUser.id);
+  console.log(activeUser, chatUsers);
   const dispatch = useDispatch();
 
   const toggleExtended = () => {

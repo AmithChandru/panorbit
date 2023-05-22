@@ -5,8 +5,8 @@ import { userActions } from '../../Store/UsersReducer';
 
 const UserModal = (props) => {
 
-  const activeUser = useSelector(state => state.users.activeUser);
-  const users = useSelector(state => state.users.users);
+  const activeUser = JSON.parse(localStorage.getItem('activeUser'));
+  const users = JSON.parse(localStorage.getItem('users'));
   const displayUsers = users.filter((item) => activeUser.id !== item.id).slice(0, 2);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -17,6 +17,8 @@ const UserModal = (props) => {
 
   const handleUserClick = (item) => {
     dispatch(userActions.activeUser(item));
+    localStorage.setItem('activeUser', JSON.stringify(item));
+    navigate('/home')
   }
 
   return (

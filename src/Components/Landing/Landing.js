@@ -24,12 +24,14 @@ const Landing = () => {
           setUsers(data.users);
           setLoading(false);
           dispatch(userActions.loadUsers(data.users));
+          localStorage.setItem('users', JSON.stringify(data.users));
         })
       })
   }
 
   const handleClick = (item) => {
     dispatch(userActions.activeUser(item));
+    localStorage.setItem('activeUser', JSON.stringify(item));
     navigate('/home');
   }
 
