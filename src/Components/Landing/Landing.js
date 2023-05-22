@@ -42,7 +42,6 @@ const Landing = () => {
         <Scrollbars
           autoHideTimeout={2000}
           autoHide={true}
-        // className='bounce'
         >
           <div className='UserDetails'>
             {users.map((item) => {

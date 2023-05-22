@@ -4,6 +4,7 @@ import { RiArrowUpSLine, RiArrowDownSLine } from "react-icons/ri";
 import { TiCancel } from "react-icons/ti";
 import { useState } from "react";
 import Scrollbars from "react-custom-scrollbars";
+import { MdSend } from "react-icons/md";
 
 const ChatModal = (props) => {
 
@@ -43,7 +44,10 @@ const ChatModal = (props) => {
               <span className="ReceivedText">This is working</span>
             </section>
           </Scrollbars>
-          <input className="ChatInput" type="text" />
+          <section className="InputChat">
+            <input className="ChatInput" type="text" />
+            <MdSend style={{color: '#1560bd', marginRight: '10px', cursor: 'pointer'}}/>
+          </section>
         </div>
       }
     </div>

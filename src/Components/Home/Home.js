@@ -177,7 +177,7 @@ const Home = () => {
                   /> */}
                   <img
                     className='MapPic'
-                    src='/map.jpg'
+                    src='https://drive.google.com/file/d/1D5-Rr245pLV1RvS0eBBfwzteNLOQV01z/view'
                     alt='image'
                   />
                   <div className='Co-ordinates'>

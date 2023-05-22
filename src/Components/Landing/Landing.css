@@ -48,19 +48,3 @@
   width: 30px;
   margin-right: 10px;
 }
-
-.bounce {
-  animation: bounce 1s ease-in-out;
-}
-
-@keyframes bounce {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-}
