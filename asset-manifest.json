@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/panorbit/static/css/main.11cf40e9.css",
+    "main.js": "/panorbit/static/js/main.2a4cca5b.js",
+    "static/js/787.cd498418.chunk.js": "/panorbit/static/js/787.cd498418.chunk.js",
+    "static/media/Poppins-Regular.ttf": "/panorbit/static/media/Poppins-Regular.4211496d0e075ffe7c2f.ttf",
+    "index.html": "/panorbit/index.html",
+    "main.11cf40e9.css.map": "/panorbit/static/css/main.11cf40e9.css.map",
+    "main.2a4cca5b.js.map": "/panorbit/static/js/main.2a4cca5b.js.map",
+    "787.cd498418.chunk.js.map": "/panorbit/static/js/787.cd498418.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11cf40e9.css",
+    "static/js/main.2a4cca5b.js"
+  ]
+}
