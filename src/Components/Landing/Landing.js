@@ -35,32 +35,32 @@ const Landing = () => {
 
   return (
     <div className='ProfileContainer'>
-        <span className='SelectTitle'>Select an account</span>
-        {loading ? 
-          <BounceLoader className='Loader' loading={loading} color="#1560bd" />
+      <span className='SelectTitle'>Select an account</span>
+      {loading ?
+        <BounceLoader className='Loader' loading={loading} color="#1560bd" />
         :
-          <Scrollbars
-            autoHideTimeout={2000}
-            autoHide={true}
-            // className='bounce'
-          >
-            <div className='UserDetails'>
-              {users.map((item) => {
-                return (
-                  <div className='UserCard' onClick={() => handleClick(item)}>
-                    <img
-                      className='ProfilePic'
-                      src={`${item.profilepicture}`} 
-                      alt='Pic' 
-                    />
-                    <span>{item.name}</span>
-                  </div>
-                )
-              })}
-            </div>
-          </Scrollbars>
-        }
-      </div>
+        <Scrollbars
+          autoHideTimeout={2000}
+          autoHide={true}
+        // className='bounce'
+        >
+          <div className='UserDetails'>
+            {users.map((item) => {
+              return (
+                <div className='UserCard' onClick={() => handleClick(item)}>
+                  <img
+                    className='ProfilePic'
+                    src={`${item.profilepicture}`}
+                    alt='Pic'
+                  />
+                  <span>{item.name}</span>
+                </div>
+              )
+            })}
+          </div>
+        </Scrollbars>
+      }
+    </div>
   )
 }
 

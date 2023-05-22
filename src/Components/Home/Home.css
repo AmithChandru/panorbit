@@ -23,6 +23,9 @@
   padding: 10px;
   border-color: #d6cfc7;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .DetailsSection {
@@ -91,8 +94,16 @@
   height: 200px;
 }
 
+.CompanyHeading {
+  font-weight: bold;
+  color: #c0c0c0;
+  border-top: 2px solid #d6cfc7;
+  width: 100%;
+  padding-top: 10px;
+}
+
 .SubText {
-  color: #d6cfc7;
+  color: #c0c0c0;
 }
 
 .NameText {
@@ -122,4 +133,14 @@
 .Loaderr {
   margin-top: 40vh;
   margin-left: 25vw;
+}
+
+.ComingSoon {
+  font-weight: bold;
+  font-size: 72px;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  margin-top: 30vh;
 }

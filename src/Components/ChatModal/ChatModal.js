@@ -13,23 +13,23 @@ const ChatModal = (props) => {
   const toggleExtended = () => {
     setExtended(!extended);
   }
-  
+
   return (
     <div className="ChatModal">
       <div className="ChatModalHeader">
         <section className="ChatHeaderContent">
           <img
             className="ProfilePic"
-            style={{marginRight: '5px', marginLeft: '10px'}}
+            style={{ marginRight: '5px', marginLeft: '10px' }}
             src={`${chatUser.profilepicture}`}
             alt="image"
           />
-          <span style={{fontSize: '12px'}}>{chatUser.name}</span>
+          <span style={{ fontSize: '12px' }}>{chatUser.name}</span>
         </section>
-        <section className="ChatHeaderContent" style={{marginRight: '10px'}}>
-          {!extended && <RiArrowUpSLine style={{cursor: 'pointer', marginRight: '5px'}} onClick={toggleExtended} />}
-          {extended && <RiArrowDownSLine style={{cursor: 'pointer', marginRight: '5px'}}  onClick={toggleExtended} />}
-          <TiCancel style={{cursor: 'pointer'}} onClick={() => props.toggleChatModal()}/>
+        <section className="ChatHeaderContent" style={{ marginRight: '10px' }}>
+          {!extended && <RiArrowUpSLine style={{ cursor: 'pointer', marginRight: '5px' }} onClick={toggleExtended} />}
+          {extended && <RiArrowDownSLine style={{ cursor: 'pointer', marginRight: '5px' }} onClick={toggleExtended} />}
+          <TiCancel style={{ cursor: 'pointer' }} onClick={() => props.toggleChatModal()} />
         </section>
       </div>
       {extended &&
@@ -43,7 +43,7 @@ const ChatModal = (props) => {
               <span className="ReceivedText">This is working</span>
             </section>
           </Scrollbars>
-          <input className="ChatInput" type="text"/>
+          <input className="ChatInput" type="text" />
         </div>
       }
     </div>

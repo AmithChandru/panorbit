@@ -41,4 +41,27 @@
   cursor: pointer;
   font-size: 10px;
   align-items: center;
+  justify-content: space-between;
+}
+
+.UserChatDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ActiveUser,
+.InactiveUser {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-right: 15px;
+}
+
+.ActiveUser {
+  background-color: green;
+}
+
+.InactiveUser {
+  background-color: gainsboro;
 }
